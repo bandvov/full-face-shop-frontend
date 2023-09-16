@@ -10,8 +10,16 @@
   --red: #ec2525;
   --green: #27ae60;
   --orange: #fe9015;
-  --dark-orange: #FA8400;
-  --gray2: #C8CBD0;
+  --dark-orange: #fa8400;
+  --gray2: #c8cbd0;
+}
+a {
+  width: max-content;
+  text-wrap: nowrap;
+}
+a:hover {
+  color: var(--orange);
+  cursor: pointer;
 }
 
 @media (prefers-color-scheme: dark) {

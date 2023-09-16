@@ -1,4 +1,4 @@
-export const URLS = [
+export const HEADER_URLS = [
   {
     name: "About us",
     url: "/about-us",
@@ -23,17 +23,15 @@ export const URLS = [
     name: "Contacts",
     url: "/contacts",
   },
+];
+
+export const MORE_URLS = [
   {
-    name: "More",
-    children: [
-      {
-        name: "Bonus",
-        url: "/bonus",
-      },
-      {
-        name: "For business",
-        url: "/for-business",
-      },
-    ],
+    name: "Bonus",
+    url: "/bonus",
+  },
+  {
+    name: "For business",
+    url: "/for-business",
   },
 ];
