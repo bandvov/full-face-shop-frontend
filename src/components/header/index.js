@@ -1,4 +1,4 @@
-import FirstHeaderRow from "./HeaderFirstRow";
+import FirstHeaderRow from "./FirstHeaderRow";
 import SecondHeaderRow from "./SecondHeaderRow";
 import ThirdHeaderRow from "./ThirdHeaderRow";
 import './styles.css'

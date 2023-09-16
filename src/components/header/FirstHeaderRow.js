@@ -1,11 +1,7 @@
-import { HEADER_URLS } from "@/configs/urls";
-import Link from "next/link";
 import React from "react";
-import SelectCity from "../buttons/SelectCity";
-import Image from "next/image";
-import CommonLink from "../link";
-import NavLinks from "./navLinks";
-import CallMe from "./callMe";
+import NavLinks from "./NavLinks";
+import SelectCity from "../SelectCity";
+import CallMe from "./CallMe";
 
 export default function FirstHeaderRow() {
   return (
