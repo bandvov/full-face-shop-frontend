@@ -1,11 +1,10 @@
 "use client";
 import Header from "../components/header";
 import "./globals.css";
-import { Inter } from "next/font/google";
 import Footer from "../components/footer";
 import "./globals.css";
 import ThemeRegistry from "./ThemeRegistry/ThemeRegistry";
-import { Box } from "@mui/material";
+import { Box, Container } from "@mui/material";
 
 export const metadata = {
   title: "Full face",
@@ -17,19 +16,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <ThemeRegistry options={{ key: "mui" }}>
-          <Box
-            sx={{
-              margin: {
-                xs: "0 16px",
-                sm: "0 26px",
-                lg: "0 150px",
-              },
-            }}
-          >
+          <Container>
             <Header />
             {children}
             <Footer />
-          </Box>
+          </Container>
         </ThemeRegistry>
       </body>
     </html>

@@ -1,20 +1,24 @@
 import Link from "next/link";
 import React from "react";
 import ProfileAndCart from "./ProfileAndCart";
+import { Grid } from "@mui/material";
+import CommonLink from "../link";
+import SearchBar from "../SearchBar";
 
 export default function SecondHeaderRow() {
   return (
-    <div className="first-header-row gap-x-3 pt-4 pb-5 border border-black">
-      <Link
-        href="https://flowbite.com/"
-        class="flex items-center border border-black"
-      >
-        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-          Happy Face
-        </span>
-      </Link>
-      <div className="border border-black">search</div>
-   <ProfileAndCart />
-    </div>
+    <Grid container height={"60px"}>
+      <Grid item xs={2}>
+        <CommonLink href="#">
+          <span>Happy Face</span>
+        </CommonLink>
+      </Grid>
+      <Grid item xs={7} paddingY={0} paddingX={1} >
+        <SearchBar />
+      </Grid>
+      <Grid item xs={3} paddingLeft={1}>
+        <ProfileAndCart />
+      </Grid>
+    </Grid>
   );
 }

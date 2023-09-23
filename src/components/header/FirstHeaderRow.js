@@ -15,7 +15,7 @@ export default function FirstHeaderRow() {
         <NavLinks />
       </Grid>
       <Grid xs={3} item>
-        <Grid container>
+        <Grid container >
           <Grid item xs={6} border={"1px solid"} align={"center"}>
             <RequestCall />
           </Grid>
