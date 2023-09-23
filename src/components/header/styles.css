@@ -1,5 +1,0 @@
-.first-header-row {
-    display: grid;
-    grid-template-columns: 2fr 7fr 3fr;
-    column-gap: 10px;
-}
