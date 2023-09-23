@@ -1,15 +1,15 @@
-export default function CommonButton({ disabled, ...rest }) {
-  return (
-    <button
-      type="button"
-      disabled={disabled}
-      {...rest}
-      className={`
-      ${disabled ? "bg-gray-500" : "bg-orange-500"} 
-      ${disabled ? "hover:bg-gray-600" : "hover:bg-orange-600"}
-      ${disabled && "disabled:opacity-25"} text-white px-7 py-2 border rounded`}
-    >
-      common
-    </button>
-  );
-}
+import { Button, styled } from "@mui/material";
+
+export const CommonButton = styled(Button)`
+ 
+  text-transform: none;
+  border-radius: 5px;
+  color: white !important;
+  padding: 6px 30px;
+  background-color: ${({ disabled }) =>
+    disabled ? "var(--gray2)" : "var(--orange)"};
+  :hover {
+    background-color: ${({ disabled }) =>
+      disabled ? "var(--gray2)" : "var(--dark-orange)"};
+  }
+`;

@@ -3,7 +3,7 @@ import React from "react";
 
 export default function CommonLink({ children, ...rest }) {
   return (
-    <Link className="px-1 flex" {...rest}>
+    <Link {...rest}>
       {children}
     </Link>
   );

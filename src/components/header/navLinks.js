@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 import CommonLink from "../link";
-import { HEADER_URLS } from "@/configs/urls";
+import { HEADER_URLS } from "../../configs/urls";
 
 export default function NavLinks() {
   const links = useMemo(() => {
