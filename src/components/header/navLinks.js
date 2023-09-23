@@ -1,9 +1,12 @@
-import React, { useMemo } from "react";
+import React, { useEffect, useMemo } from "react";
 import { HEADER_URLS } from "../../configs/urls";
 import { Grid } from "@mui/material";
 import { CommonButton } from "../commonButton";
+import { usePathname } from "next/navigation";
 
 export default function NavLinks() {
+  const pathname = usePathname();
+  
   const links = useMemo(() => {
     return HEADER_URLS.map(({ url, name }) => {
       return (
@@ -15,7 +18,7 @@ export default function NavLinks() {
               backgroundColor: "white",
               width: "100%",
               padding: "0",
-              color: "var(--black) !important",
+              color: pathname === url ? "var(--orange) !important" : "var(--black) !important",
               ":hover": {
                 backgroundColor: "white",
                 color: "var(--orange) !important",
@@ -27,7 +30,7 @@ export default function NavLinks() {
         </Grid>
       );
     });
-  }, []);
+  }, [pathname]);
 
   return (
     <Grid
