@@ -3,7 +3,7 @@ import React from "react";
 import ProfileAndCart from "./ProfileAndCart";
 import { Grid } from "@mui/material";
 import CommonLink from "../link";
-import SearchBar from "../SearchBar";
+import SearchInput from "../SearchInput";
 
 export default function SecondHeaderRow() {
   return (
@@ -14,7 +14,7 @@ export default function SecondHeaderRow() {
         </CommonLink>
       </Grid>
       <Grid item xs={7} paddingY={0} paddingX={1} >
-        <SearchBar />
+        <SearchInput />
       </Grid>
       <Grid item xs={3} paddingLeft={1}>
         <ProfileAndCart />

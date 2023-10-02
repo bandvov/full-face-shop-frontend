@@ -4,7 +4,7 @@ export const CommonButton = styled(Button)`
   text-transform: none;
   border-radius: 5px;
   color: ${(props) => props?.style?.color || "white !important"};
-  padding: 6px 30px;
+  padding: ${(props) => props?.style?.padding ?? "6px 30px"};
   background-color: ${({ disabled }) =>
     disabled ? "var(--gray2)" : "var(--orange)"};
   :hover {
