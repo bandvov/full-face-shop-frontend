@@ -2,7 +2,7 @@ import { InputAdornment, TextField } from "@mui/material";
 import { useState } from "react";
 import SearchIcon from "@mui/icons-material/Search";
 
-export default function SearchInput() {
+export default function SearchInput({ style, ...props }) {
   const [searchTerm, setSearchTerm] = useState("");
 
   const handleChange = (event) => {
@@ -11,6 +11,7 @@ export default function SearchInput() {
 
   return (
     <TextField
+      style={style}
       fullWidth
       id="search"
       type="search"
@@ -27,8 +28,8 @@ export default function SearchInput() {
         filter: "box-shadow: 0px 4px 4px 0px #00000040",
         border: "1px solid var(--gray2)",
         color: "var(--black) !important",
-        height:"60px",
       }}
+      {...props}
     />
   );
 }

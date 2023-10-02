@@ -9,9 +9,9 @@ export default function ProfileAndCart() {
     { label: 1234, image: "/cart.svg" },
   ].map((o) => {
     return (
-      <Grid sm={6} key={o.label} paddingRight={o.image === "/user.svg"&& 1}>
+      <Grid sm={6} key={o.label} paddingRight={o.image === "/user.svg" && 1}>
         <CommonButton
-        
+          aria-label={o.label}
           startIcon={
             <Image alt="user icon" width={18} height={18} src={o.image} />
           }

@@ -14,7 +14,7 @@ export default function SecondHeaderRow() {
         </CommonLink>
       </Grid>
       <Grid item xs={7} paddingY={0} paddingX={1} >
-        <SearchInput />
+        <SearchInput style={{height:'60px'}} />
       </Grid>
       <Grid item xs={3} paddingLeft={1}>
         <ProfileAndCart />
