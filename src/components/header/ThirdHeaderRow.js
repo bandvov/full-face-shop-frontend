@@ -1,8 +1,5 @@
-import { CATEGORIES } from "@/configs/urls";
-import { Grid, Menu, MenuItem, MenuList } from "@mui/material";
-import Link from "next/link";
+import { Grid } from "@mui/material";
 import React from "react";
-import CommonLink from "../link";
 import CategoryLinks from "./CategoryLinks";
 
 export default function ThirdHeaderRow() {

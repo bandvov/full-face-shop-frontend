@@ -1,7 +1,6 @@
 import { CATEGORIES } from "@/configs/urls";
-import { Grid, Link } from "@mui/material";
+import { Grid } from "@mui/material";
 import React, { useMemo } from "react";
-import { CommonButton } from "../commonButton";
 import { usePathname } from "next/navigation";
 import CommonLink from "../link";
 

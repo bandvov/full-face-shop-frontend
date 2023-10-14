@@ -4,7 +4,7 @@ import "./globals.css";
 import Footer from "../components/footer";
 import "./globals.css";
 import ThemeRegistry from "./ThemeRegistry/ThemeRegistry";
-import { Box, Container } from "@mui/material";
+import {  Container } from "@mui/material";
 
 export const metadata = {
   title: "Full face",
