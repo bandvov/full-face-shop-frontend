@@ -88,11 +88,9 @@ export const CATEGORIES = [
   {
     name: "Pharmacy",
     url: "/pharmacy",
-  
   },
   {
     name: "Discount",
     url: "/discount",
-  
   },
 ];
