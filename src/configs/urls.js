@@ -35,13 +35,13 @@ export const FRANCHISING_URL = {
   url: "/frinchising",
 };
 export const DISCOUNT_URL = {
-  name:"Discount",
-  url: "/discount"
-}
+  name: "Discount",
+  url: "/discount",
+};
 export const VETCLINIC_URL = {
   name: "Vetclinic",
-  url:"http://google.com"
-}
+  url: "http://google.com",
+};
 export const HEADER_URLS = [
   ABOUT_US_URL,
   DELIVERY_AND_PAYMENTS,
@@ -63,4 +63,36 @@ export const FOOTER_URLS = [
   CONTACTS_URL,
   DISCOUNT_URL,
   BLOG_URL,
+];
+export const CATEGORIES = [
+  {
+    name: "Cats",
+    url: "/cats",
+  },
+  {
+    name: "Dogs",
+    url: "/dogs",
+  },
+  {
+    name: "Rodents",
+    url: "/rodents",
+  },
+  {
+    name: "Birds",
+    url: "/birds",
+  },
+  {
+    name: "Fish",
+    url: "/fish",
+  },
+  {
+    name: "Pharmacy",
+    url: "/pharmacy",
+  
+  },
+  {
+    name: "Discount",
+    url: "/discount",
+  
+  },
 ];
