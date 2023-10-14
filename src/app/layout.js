@@ -1,6 +1,5 @@
 "use client";
 import Header from "../components/header";
-import "./globals.css";
 import Footer from "../components/footer";
 import "./globals.css";
 import ThemeRegistry from "./ThemeRegistry/ThemeRegistry";
