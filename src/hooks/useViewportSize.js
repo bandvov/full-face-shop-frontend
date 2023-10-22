@@ -6,7 +6,7 @@ export const useViewportSize = () => {
   const [isDesktop, setIsDesktop] = useState(false);
 
   const t = useMediaQuery("(min-width:768px)");
-  const d = useMediaQuery("(min-width:1024px)");
+  const d = useMediaQuery("(min-width:1280px)");
 
   useEffect(() => {
     setIsTablet(t);
