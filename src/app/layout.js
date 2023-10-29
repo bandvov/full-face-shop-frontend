@@ -1,9 +1,9 @@
-import Header from "@/components/header";
+"use client";
+import Header from "../components/header";
+import Footer from "../components/footer";
 import "./globals.css";
-import { Inter } from "next/font/google";
-import Footer from "@/components/footer";
-
-const inter = Inter({ subsets: ["latin"] });
+import ThemeRegistry from "./ThemeRegistry/ThemeRegistry";
+import {  Container } from "@mui/material";
 
 export const metadata = {
   title: "Full face",
@@ -13,10 +13,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} lg:px-40`}>
-        <Header />
-        {children}
-        <Footer />
+      <body>
+        <ThemeRegistry options={{ key: "mui" }}>
+          <Container>
+            <Header />
+            {children}
+            <Footer />
+          </Container>
+        </ThemeRegistry>
       </body>
     </html>
   );

@@ -5,7 +5,7 @@ import './styles.css'
 
 export default function Header() {
   return (
-    <div className="border border-black">
+    <div>
       <FirstHeaderRow />
       <SecondHeaderRow />
       <ThirdHeaderRow />

@@ -1,19 +1,33 @@
-import { HEADER_URLS } from "@/configs/urls";
-import Link from "next/link";
 import React from "react";
-import SelectCity from "../buttons/SelectCity";
-import Image from "next/image";
-import CommonLink from "../link";
 import NavLinks from "./navLinks";
-import CallMe from "./callMe";
+import SelectCity from "../SelectCity";
+import CallMe from "./CallMe";
+import { Grid } from "@mui/material";
+import RequestCall from "./RequestCall";
+import { useViewportSize } from "@/hooks/useViewportSize";
 
 export default function FirstHeaderRow() {
+  const { isDesktop } = useViewportSize();
   return (
-    <div className="first-header-row gap-x-3 pt-4 pb-5 border border-black">
-      <SelectCity />
-
-      <NavLinks />
-      <CallMe />
-    </div>
+    <Grid container padding="17px 0 15px">
+      <Grid sm={7} md={8} lg={2} item>
+        <SelectCity />
+      </Grid>
+      {isDesktop && (
+        <Grid xs={7} item>
+          <NavLinks />
+        </Grid>
+      )}
+      <Grid sm={5} md={4} lg={3} item>
+        <Grid container>
+          <Grid item sm={7} lg={6} border={"1px solid"} align={"center"}>
+            <RequestCall />
+          </Grid>
+          <Grid item sm={5} lg={6} border={"1px solid"} align={"center"}>
+            <CallMe />
+          </Grid>
+        </Grid>
+      </Grid>
+    </Grid>
   );
 }
